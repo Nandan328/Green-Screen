@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <title>Green Screen Project</title>
+</head>
+<body>
+    <h1>Green Screen Project</h1>
+    <div class="container">
+    <h3>Insert a greenscreen photo</h3>
+    <canvas id="canvas1"></canvas>
+    <input type="file" accept="image" multiple="false" id="fileInput1" onchange="upload1()" class="inp1">
+    <label for="fileInput1" class="input1">Choose Files</label>
+    <canvas id="canvas2"></canvas>
+    <input type="file" accept="image" multiple="false" id="fileInput2" onchange="upload2()" class="inp2">
+    <label for="fileInput2" class="input2">Choose Files</label>
+    <canvas id="canvas3"></canvas>
+    <button onclick="replaceGreenScreen()" id="replace">Replace Green Screen</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

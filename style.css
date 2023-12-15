@@ -1,0 +1,53 @@
+body {
+    background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    margin-left: 40%;
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 45px;
+}
+
+#canvas1,#canvas2,#canvas3 {
+    border: 2px solid;
+    max-width: 100%;
+    margin: 20px;
+    display: block;
+    width: 30%;
+    height: auto;
+}
+
+#replace{
+    margin-left: 10%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgb(9, 114, 126);
+    cursor: pointer;
+    background-color:  rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+#replace:hover{
+    transform: scale(0.9);
+}
+
+.inp1, .inp2 {
+    margin-left: 12%;
+    border: none;
+    opacity: 0;
+    
+  }
+  .input1, .input2{
+    margin-left: -29%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(6, 69, 76);
+    cursor: pointer;
+  }
+
