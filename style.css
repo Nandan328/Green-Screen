@@ -13,6 +13,10 @@ h1{
     font-size: 45px;
 }
 
+h3{
+    margin-left: 2.7%;
+}
+
 #canvas1,#canvas2,#canvas3 {
     border: 2px solid;
     max-width: 100%;
