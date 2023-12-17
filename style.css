@@ -1,57 +1,73 @@
 body {
     background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     font-family: 'Times New Roman', Times, serif;
-}
-
-.container{
-    margin-left: 40%;
-}
-
-h1{
-    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .container {
     text-align: center;
-    font-size: 45px;
-}
-
-h3{
-    margin-left: 2.7%;
-}
-
-#canvas1,#canvas2,#canvas3 {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  h1, h3 {
+    margin-bottom: 10px;
+  }
+  h1{
+    font-size: 40px;
+    margin-top: 25px;
+  }
+  
+  canvas {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     border: 2px solid;
     max-width: 100%;
-    margin: 20px;
-    display: block;
-    width: 30%;
-    height: auto;
-}
-
-#replace{
-    margin-left: 10%;
-    padding: 5px;
-    border-radius: 5px;
-    border-color: rgb(9, 114, 126);
-    cursor: pointer;
+  }
+  
+  .inp1, .inp2 {
+    display: none;
+  }
+  
+  .input1, .input2 {
     background-color:  rgba(0, 0, 0, 0);
-    transition: transform 0.3s ease;
-}
-
-#replace:hover{
-    transform: scale(0.9);
-}
-
-.inp1, .inp2 {
-    margin-left: 12%;
-    border: none;
-    opacity: 0;
-    
-  }
-  .input1, .input2{
-    margin-left: -29%;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 5px;
-    border-radius: 5px;
     border: 2px solid rgb(6, 69, 76);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    transition: 0.3s;
   }
-
+  
+  .input1:hover, .input2:hover {
+    transform: scale(0.9);
+  }
+  
+  #replace {
+    background-color:  rgba(0, 0, 0, 0);
+    border-color: rgb(9, 114, 126);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #replace:hover{
+    transform: scale(0.9);
+  }
