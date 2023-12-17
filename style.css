@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: none;
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
